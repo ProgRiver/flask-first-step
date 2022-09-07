@@ -1,27 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def index():
-    return '''
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>"Home page"</title>
-            <meta charset="utf-8">
-        </head>
-        <body>
-            <p>"Hello, my Flask"</p>
-        </body>
-    </html>
-    <script>
-        alert('Всплывающее окно...')
-    </script>
-    '''
-
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
