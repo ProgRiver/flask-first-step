@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 number = 150
 # user_name = choice(("name-1", "name-2", "name-3", "name-4"))
+# ["name-1", "name-2", "name-3", "name-4"].sort()
 
 @app.route("/")
 def index():

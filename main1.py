@@ -30,3 +30,20 @@ def about():
 
 if __name__ == "__main__":
    app.run(debug=True)
+
+
+
+# from operator import add, sub, mul, truediv, pow
+
+# @app.route('/<float:a>/<op>/<float:b>/')
+# def calc(a, op, b):
+#     funcs = {'+': add, '-': sub, '*': mul, ':': truediv, '**': pow}
+#     return render_template('index.html', a=a, funcs=funcs, op=op, b=b)
+
+# template = '''
+# {% if op not in funcs or (op == ":" and b == 0) %}
+#     Ошибка
+# {% else %}
+#     {{ funcs[op](a, b) }}
+# {% endif %}
+# '''
