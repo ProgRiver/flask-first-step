@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Страница</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>My leather craft</h1>
+    <h1>My leather craft {{ name }}</h1>
+    <h2>Number {{ project_number }} (mm)</h2>
     <img src="{{ url_for('static', filename='img/55p.jpg') }}" alt="Img" width="240" height="240">
 </body>
 </html>
-<script>alert(" Хочешь увидеть фото?\n Жми 'OK' ... ")</script>
+<!-- <script>alert(" Хочешь увидеть фото?\n Жми 'OK' ... ")</script> -->
