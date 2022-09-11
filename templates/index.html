@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    {% include '_menu.html' %}
     <h1>My leather craft {{ name }}</h1>
     <h2>Number {{ project_number }} (mm)</h2>
     <img src="{{ url_for('static', filename='img/55p.jpg') }}" alt="Img" width="240" height="240">
