@@ -5,3 +5,13 @@ body {
 p, ul {
     color: red
 }
+
+a {
+    background: rgb(13, 7, 70);
+    color: silver
+}
+
+h2 {
+    background: tan;
+    color:slateblue
+}

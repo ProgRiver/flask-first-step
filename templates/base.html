@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {{ title }} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% block menu %}
+    <!-- {% include '_menu.html' %} -->
+    {% endblock %}
+
+    {% block content %}
+    <!-- <h1>My leather craft {{ name }}</h1>
+    <h2>Number {{ project_number }} (mm)</h2>
+    <img src="{{ url_for('static', filename='img/55p.jpg') }}" alt="Img" width="240" height="240">
+    <p>Список значений</p>
+    <ul>
+        {% for item in ["green", "red", "black", "white"] %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <h2>
+        {% from "macros.html" import get_sum %}
+        {{ get_sum(1, 2, 3, a=4, b=5, c=7) }}
+    </h2> -->
+    {% endblock %}
+</body>
+</html>
+<!-- <script>alert(" Хочешь увидеть фото?\n Жми 'OK' ... ")</script> -->
