@@ -15,6 +15,10 @@
             <li>{{ item }}</li>
         {% endfor %}
     </ul>
+    <h2>
+        {% from "macros.html" import get_sum %}
+        {{ get_sum(1, 2, 3, a=4, b=5, c=7) }}
+    </h2>
 </body>
 </html>
 <!-- <script>alert(" Хочешь увидеть фото?\n Жми 'OK' ... ")</script> -->
